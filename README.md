@@ -24,7 +24,7 @@ Welcome to Clax.nvim, your ultimate Neovim distribution for a seamless and effic
    ```vim
    :PackerInstall
    ```
-3.
+3. Copy the theme file into the startup.nvim themes directory
    ```bash
     cd clax.nvim
     cp clax.lua ~/.local/share/nvim/site/pack/packer/start/startup.nvim/lua/startup/themes
