@@ -18,15 +18,18 @@ Welcome to Clax.nvim, your ultimate Neovim distribution for a seamless and effic
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/clax.nvim.git ~/.config/nvim
+   git clone https://github.com/spirizeon/clax.nvim.git ~/.config/nvim
    ```
-
 2. Launch Neovim and run the following command to install plugins using Packer.nvim:
    ```vim
    :PackerInstall
    ```
-
-3. Start enhancing your coding experience with Clax.nvim!
+3.
+   ```bash
+    cd clax.nvim
+    cp clax.lua ~/.local/share/nvim/site/pack/packer/start/startup.nvim/lua/startup/themes
+   ```
+4. Start enhancing your coding experience with Clax.nvim!
 
 ## Configuration:
 
