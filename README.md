@@ -16,12 +16,27 @@ Welcome to Clax.nvim, your ultimate Neovim distribution for a seamless and effic
 - **Packer.nvim Integration:** Effortlessly manage plugins with Packer.nvim, ensuring a clean and organized configuration that's easy to maintain.
 
 ## Installation:
+Clone packer.nvim and source files
 ```bash
-git clone  --depth 1 https://github.com/spirizeon/clax.nvim
+mkdir ~/.config/nvim
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+git clone -b dev  --depth 1 https://github.com/spirizeon/clax.nvim
+```
+Install packer modules
+```bash
 cd clax.nvim
 cp init.lua ~/.config/nvim
-cp clax.lua ~/.config/nvim
-nvim +PackerInstall #type N incase of prompt
+nvim +PackerInstall # Just press [ENTER] at any prompts
+``` 
+Set the custom theme and update the config
+```bash
+cp clax.lua ~/.local/share/nvim/site/pack/packer/start/startup.nvim/lua/startup/themes/
+nvim +PackerSync
+```
+Start nvim
+```
+nvim
 ```
 
 ## Configuration:
