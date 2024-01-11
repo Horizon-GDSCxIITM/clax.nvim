@@ -1,5 +1,8 @@
+-- leader keymaps
 vim.g.mapleader = " "
 vim.keymap.set("n","<leader>pv",vim.cmd.Ex)
+
+
 local packer = require('packer')
 packer.util = require('packer.util')
 
@@ -82,12 +85,6 @@ packer.startup(function()
   requires = { {'nvim-lua/plenary.nvim'} }
       }
 
-       use {
-  'nvim-telescope/telescope.nvim', tag = '0.1.5',
--- or                            , branch = '0.1.x',
-  requires = { {'nvim-lua/plenary.nvim'} }
-      }
-
   use { 
 	"ellisonleao/gruvbox.nvim",
 	as = 'gruvbox',
@@ -101,7 +98,28 @@ packer.startup(function()
 	  'nvim-treesitter/nvim-treesitter',
       }
 
+
   end
 )
 
+-- keymaps
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>lg', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>of', builtin.oldfiles, {})
+vim.keymap.set('n', '<leader>nf', vim.cmd.new, {})
 
+
+-- treesitter config
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = { "c", "lua", "vim", "python", "javascript", "typescript", "bash", "go", "rust" },
+
+  sync_install = false,
+  auto_install = true,
+  highlight = {
+    enable = true,
+
+   additional_vim_regex_highlighting = false,
+  },
+}
