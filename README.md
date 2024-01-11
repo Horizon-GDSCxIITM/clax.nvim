@@ -1,3 +1,5 @@
+![image](https://github.com/Spirizeon/clax.nvim/assets/123345456/4ccabba9-3a61-4fb6-b292-394c557b6feb)
+
 # Clax.nvim - Lightning fast, Lightweight Neovim Distribution
 
 Welcome to Clax.nvim, your ultimate Neovim distribution for a seamless and efficient editing experience. This distribution is built for speed, with a lightweight design tailored for both beginners and experts. Clax.nvim leverages the power of Packer.nvim to make plugin management easy and customizable.
