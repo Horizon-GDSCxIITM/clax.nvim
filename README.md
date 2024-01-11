@@ -18,6 +18,14 @@ Welcome to Clax.nvim, your ultimate Neovim distribution for a seamless and effic
 
 - **Packer.nvim Integration:** Effortlessly manage plugins with Packer.nvim, ensuring a clean and organized configuration that's easy to maintain.
 
+## Pre-configured plugins:
+
+- **Telescope.nvim**
+- **Gruvbox.nvim**
+- **Startup.nvim**
+- **Plenary.nvim**
+- **Treesitter.nvim**
+
 ## Installation:
 Clone packer.nvim and source files
 ```bash
@@ -52,6 +60,11 @@ nvim
 
 Explore the `init.lua` file to customize keybindings, plugins, and other settings to suit your workflow. The Packer.nvim integration provides a clean and organized way to manage your plugins.
 
+## Uninstall
+Simply run this command
+```
+rm -rf ~/.config/nvim ~/.local/share/nvim
+```
 ## Contribute:
 
 We welcome contributions! Whether it's bug fixes, new features, or optimizations, feel free to open issues and pull requests.
