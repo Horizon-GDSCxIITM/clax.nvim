@@ -3,6 +3,7 @@
 Welcome to Clax.nvim, your ultimate Neovim distribution for a seamless and efficient editing experience. This distribution is built for speed, with a lightweight design tailored for both beginners and experts. Clax.nvim leverages the power of Packer.nvim to make plugin management easy and customizable.
 
 > This project is dedicated to my friend "Clax", in a stupid attempt to make him install Arch Linux (Lol)
+
 ## Features:
 
 - **Blazing Speed:** Clax.nvim is optimized for speed, ensuring a snappy and responsive editing environment, even for large codebases.
@@ -45,7 +46,6 @@ Exit and restart nvim (ENJOY!)
 ```
 nvim
 ```
-
 ## Configuration:
 
 Explore the `init.lua` file to customize keybindings, plugins, and other settings to suit your workflow. The Packer.nvim integration provides a clean and organized way to manage your plugins.
