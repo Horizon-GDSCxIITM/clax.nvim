@@ -96,9 +96,18 @@ packer.startup(function()
 
   use {
 	  'nvim-treesitter/nvim-treesitter',
+	  run = ':TSUpdate'
       }
 
+      use {
+  "startup-nvim/startup.nvim",
+  requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+  config = function()
+    require"startup".setup({theme = 'clax'})
+  end
+}
 
+  
   end
 )
 
