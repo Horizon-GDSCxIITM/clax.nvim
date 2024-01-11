@@ -3,6 +3,8 @@
 git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 #Download clax.nvim
 git clone --depth 1 https://github.com/spirizeon/clax.nvim ~/.config/nvim
+#install all packer plugins and quit
+nvim +PackerInstall +qall
 #set the clax.nvim default theme
 cp ~/.config/nvim/clax.lua ~/.local/share/nvim/site/pack/packer/start/startup.nvim/lua/startup/themes
 #confirmation message
