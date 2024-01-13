@@ -1,4 +1,5 @@
-![image](https://github.com/Spirizeon/clax.nvim/assets/123345456/4ccabba9-3a61-4fb6-b292-394c557b6feb)
+![image](https://github.com/Spirizeon/clax.nvim/assets/123345456/ac9a985b-51d1-4590-84df-9df411755acf)
+
 
 # Clax.nvim - Lightning fast, Lightweight Neovim Distribution
 
@@ -17,14 +18,6 @@ Welcome to Clax.nvim, your ultimate Neovim distribution for a seamless and effic
 - **Customizable:** Tailor your Neovim experience to your preferences with extensive customization options. Whether you're a minimalist or a power user, Clax.nvim adapts to your workflow.
 
 - **Packer.nvim Integration:** Effortlessly manage plugins with Packer.nvim, ensuring a clean and organized configuration that's easy to maintain.
-
-## Pre-configured plugins:
-
-- **Telescope.nvim**
-- **Gruvbox.nvim**
-- **Startup.nvim**
-- **Plenary.nvim**
-- **Treesitter.nvim**
 
 ## Installation:
 Clone packer.nvim and source files
@@ -57,6 +50,8 @@ Exit and restart nvim (ENJOY!)
 nvim
 ```
 ## Configuration:
+![image](https://github.com/Spirizeon/clax.nvim/assets/123345456/270963a6-e8bc-45d4-b161-98ad895e5fc9)
+
 
 Explore the `init.lua` file to customize keybindings, plugins, and other settings to suit your workflow. The Packer.nvim integration provides a clean and organized way to manage your plugins.
 
