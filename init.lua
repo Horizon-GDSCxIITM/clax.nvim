@@ -1,6 +1,7 @@
 -- leader keymaps
 vim.g.mapleader = " "
 vim.keymap.set("n","<leader>pv",vim.cmd.Ex)
+vim.keymap.set("n","<leader>nt",vim.cmd.Neotree)
 vim.cmd('set number')
 local packer = require('packer')
 packer.util = require('packer.util')
