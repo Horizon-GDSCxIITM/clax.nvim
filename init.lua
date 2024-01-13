@@ -2,7 +2,12 @@
 vim.g.mapleader = " "
 vim.keymap.set("n","<leader>pv",vim.cmd.Ex)
 vim.keymap.set("n","<leader>nt",vim.cmd.Neotree)
+vim.keymap.set("n","<leader>md",vim.cmd.MarkdownPreviewToggle) --only works on md files
 vim.cmd('set number')
+
+
+
+
 local packer = require('packer')
 packer.util = require('packer.util')
 
@@ -15,7 +20,10 @@ packer.startup(function()
 -- or                            , branch = '0.1.x',
   requires = { {'nvim-lua/plenary.nvim'} }
       }
-
+use {
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+}
    use {
   'nvim-lualine/lualine.nvim',
   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
