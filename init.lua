@@ -5,6 +5,14 @@ vim.keymap.set("n","<leader>nt",vim.cmd.Neotree)
 vim.keymap.set("n","<leader>md",vim.cmd.MarkdownPreviewToggle) --only works on md files
 vim.cmd('set number')
 
+function open_terminal()
+	-- make vertical split
+	vim.cmd("vsplit")
+	vim.cmd("set nonumber")
+	vim.cmd("terminal")
+end 
+
+vim.keymap.set("n","<leader>ot","<cmd>lua open_terminal()<cr>")
 
 
 
