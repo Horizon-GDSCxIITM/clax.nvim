@@ -57,7 +57,8 @@ Here's a table of keybinds from your Lua file for the Neovim config:
 
 | Keybind | Functionality |
 | --- | --- |
-| `<leader>pv` | Ex command |
+| `<leader>ot` | Open a vertical split terminal |
+| `<leader>pv` | Netrw command |
 | `<leader>nt` | Neotree command |
 | `<leader>md` | Toggle Markdown Preview (only works on .md files) |
 | `<leader>ff` | Find files using telescope |
