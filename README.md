@@ -23,11 +23,15 @@ Welcome to Clax.nvim, your ultimate Neovim distribution for a seamless and effic
 Clone packer.nvim and source files
 ```bash
 mkdir ~/.config/nvim
+```
 
+```
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
 
-git clone -b dev  --depth 1 https://github.com/spirizeon/clax.nvim
+```
+git clone --depth 1 https://github.com/spirizeon/clax.nvim.git
 ```
 Install packer modules
 ```bash
@@ -42,6 +46,9 @@ cp clax.lua ~/.local/share/nvim/site/pack/packer/start/startup.nvim/lua/startup/
 Install 
 ```
 nvim #for installing treesitter modules
+```
+
+```
 nvim +PackerSync # Just press [ENTER] at any prompts
 ```
 
