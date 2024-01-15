@@ -4,7 +4,7 @@ vim.keymap.set("n","<leader>pv",vim.cmd.Ex)
 vim.keymap.set("n","<leader>nt",vim.cmd.Neotree)
 vim.keymap.set("n","<leader>md",vim.cmd.MarkdownPreviewToggle) --only works on md files
 vim.cmd('set number')
-
+vim.cmd('colorscheme default')
 function open_terminal()
 	-- make vertical split
 	vim.cmd("vsplit")
@@ -28,6 +28,8 @@ packer.startup(function()
 -- or                            , branch = '0.1.x',
   requires = { {'nvim-lua/plenary.nvim'} }
       }
+use { "williamboman/mason.nvim"}
+      
 use {
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
@@ -248,3 +250,6 @@ require('lualine').setup {
   inactive_winbar = {},
   extensions = {}
 }
+
+-- mason 
+require("mason").setup()
