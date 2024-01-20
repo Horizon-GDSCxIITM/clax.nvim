@@ -40,14 +40,7 @@ use {
        }
 
 
-  use { 
-	"ellisonleao/gruvbox.nvim",
-	as = 'gruvbox',
-	config = function()
-		vim.cmd('colorscheme gruvbox')
-	end
-	
-  }
+  
 use {"williamboman/mason.nvim"} -- mason
   use {
 	  'nvim-treesitter/nvim-treesitter',
