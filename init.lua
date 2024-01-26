@@ -39,7 +39,7 @@ use {
   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
        }
 
-
+use { 'dccsillag/magma-nvim', run = ':UpdateRemotePlugins' }
   
 use {"williamboman/mason.nvim"} -- mason
   use {
