@@ -93,6 +93,13 @@ use {
 )
 
 -- keymaps
+-- Define a function to save the code
+function save_code()
+    vim.cmd(":w")
+end
+
+-- Map Ctrl + S to the save_code function
+vim.keymap.set("n", "<C-s>", "save_code()", {noremap = true})
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>lg', builtin.live_grep, {})
