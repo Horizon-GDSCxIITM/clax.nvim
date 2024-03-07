@@ -162,9 +162,10 @@ cmp.setup({
 function save_code()
     vim.cmd(":w")
 end
+-- Map Ctrl + S to save the current buffer
+vim.api.nvim_set_keymap('n', '<C-s>', ':w<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<C-s>', '<Esc>:w<CR>', { noremap = true, silent = true })
 
--- Map Ctrl + S to the save_code function
-vim.keymap.set("n", "<C-s>", "save_code()", {noremap = true})
 
 
 -- barbar config
