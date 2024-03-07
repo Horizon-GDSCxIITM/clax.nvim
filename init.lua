@@ -158,6 +158,62 @@ cmp.setup({
   }),
 })
 
+
+-- Load friendly snippets
+require("luasnip/loaders/from_vscode").lazy_load()
+
+-- HTML snippets
+local html_snippets = {
+    htmldoc = "<!DOCTYPE html>\n<html>\n<head>\n\t<title>${1:Title}</title>\n</head>\n<body>\n\t$0\n</body>\n</html>",
+    div = "<div>${0}</div>",
+    span = "<span>${0}</span>",
+    a = "<a href=\"${1:#}\">${2:Link}</a>",
+    img = "<img src=\"${1:path/to/image}\" alt=\"${2:Alt text}\">",
+    input = "<input type=\"${1:text}\" name=\"${2:name}\" id=\"${3:id}\"${4: value=\"${5:}\"}>",
+    -- Add more HTML snippets as needed
+}
+
+-- React.js snippets
+local react_snippets = {
+    rfce = "import React from 'react';\n\nfunction ${1:ComponentName}() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n}\n\nexport default ${1:ComponentName};",
+    useState = "const [${1:state}, set${2:State}] = React.useState(${3:initialState});",
+    useEffect = "React.useEffect(() => {\n\t$0\n}, []);",
+    -- Add more React.js snippets as needed
+}
+
+-- Next.js snippets
+local nextjs_snippets = {
+    nextpage = "import React from 'react';\nimport Head from 'next/head';\n\nfunction ${1:PageName}() {\n\treturn (\n\t\t<div>\n\t\t\t<Head>\n\t\t\t\t<title>${2:Page Title}</title>\n\t\t\t</Head>\n\t\t\t$0\n\t\t</div>\n\t);\n}\n\nexport default ${1:PageName};",
+    -- Add more Next.js snippets as needed
+}
+
+-- JSX/TSX snippets
+local jsx_tsx_snippets = {
+    tsxdoc = "import React from 'react';\n\ninterface Props {\n\t$0\n}\n\nconst ${1:ComponentName}: React.FC<Props> = ({ $2 }) => {\n\treturn (\n\t\t<div>\n\t\t\t$3\n\t\t</div>\n\t);\n};\n\nexport default ${1:ComponentName};",
+    -- Add more JSX/TSX snippets as needed
+}
+
+-- Add HTML snippets
+for trigger, snippet in pairs(html_snippets) do
+    luasnip.snippets[trigger] = luasnip.parser.parse_snippet({ trig = trigger, wordTrig = true }, snippet)
+end
+
+-- Add React.js snippets
+for trigger, snippet in pairs(react_snippets) do
+    luasnip.snippets[trigger] = luasnip.parser.parse_snippet({ trig = trigger, wordTrig = true }, snippet)
+end
+
+-- Add Next.js snippets
+for trigger, snippet in pairs(nextjs_snippets) do
+    luasnip.snippets[trigger] = luasnip.parser.parse_snippet({ trig = trigger, wordTrig = true }, snippet)
+end
+
+-- Add JSX/TSX snippets
+for trigger, snippet in pairs(jsx_tsx_snippets) do
+    luasnip.snippets[trigger] = luasnip.parser.parse_snippet({ trig = trigger, wordTrig = true }, snippet)
+end
+
+
 -- Define a function to save the code
 function save_code()
     vim.cmd(":w")
