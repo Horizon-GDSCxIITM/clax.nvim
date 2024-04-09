@@ -14,4 +14,4 @@ cp init.lua ~/.config/nvim/
 cp clax.lua ~/.local/share/nvim/site/pack/packer/start/startup.nvim/lua/startup/themes/
 
 #Fire ups nvim (neovim)
-nvim +PackerInstall +TSUpdate
+nvim +PackerInstall
