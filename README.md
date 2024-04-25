@@ -39,7 +39,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 ```
 
 ```
-git clone --depth 1 https://github.com/spirizeon/clax.nvim.git
+git clone --depth 1 https://github.com/Horizon-GDSCxIITM/clax.nvim.git
 ```
 Install packer modules
 ```bash
