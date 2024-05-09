@@ -24,7 +24,13 @@ Welcome to Clax.nvim, your ultimate Neovim distribution for a seamless and effic
 ### Install script
 
 ```
+git clone https://github.com/Horizon-GDSCxIITM/clax.nvim
+cd clax.nvim 
 sh install.sh
+```
+or 
+```
+curl 'https://raw.githubusercontent.com/Horizon-GDSCxIITM/clax.nvim/main/install.sh' | sh
 ```
 
 ### Manual Installation 
