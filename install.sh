@@ -1,4 +1,5 @@
 #!/bin/sh
+cd /tmp
 mkdir ~/.config/nvim
 
 #Clone dependencies
